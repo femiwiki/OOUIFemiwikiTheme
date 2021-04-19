@@ -1,5 +1,7 @@
 [submodule "oojs-ui"]
 	path = oojs-ui
 	url = https://github.com/wikimedia/oojs-ui
-	branch = master
+	# MediaWiki 1.35 supports for OOUI v0.39.3
+	# https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/core/+/1.35.1/RELEASE-NOTES-1.35#505
+	branch = v0.39.3
 	ignore = dirty

@@ -1,0 +1,17 @@
+{
+  "name": "@femiwiki/ooui-femiwiki-theme",
+  "version": "1.0.0",
+  "description": "OOUI Femiwiki Theme",
+  "main": "index.js",
+  "repository": "https://github.com/femiwiki/OOUIFemiwikiTheme",
+  "author": "Femiwiki Team <admin@femiwiki.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "prettier '**/*.{js,json,css,less,md}' --check",
+    "fix": "prettier '**/*.{js,json,css,less,md}' --write"
+  },
+  "dependencies": {
+    "grunt": "^1.3.0",
+    "prettier": "^2.2.1"
+  }
+}

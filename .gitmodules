@@ -1,0 +1,5 @@
+[submodule "oojs-ui"]
+	path = oojs-ui
+	url = https://github.com/wikimedia/oojs-ui
+	branch = master
+	ignore = dirty

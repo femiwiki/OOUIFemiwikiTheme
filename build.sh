@@ -20,6 +20,7 @@ echo 'Moveing Femiwiki Theme to dist'
 mkdir -p "$WD/dist/php/" "$WD/dist/resources/"
 cp "$WD/oojs-ui/php/themes/FemiwikiTheme.php" "$WD/dist/"
 cp "$WD/oojs-ui/dist/oojs-ui-femiwiki.js" "$WD/dist/resources/"
-cp "$WD/"oojs-ui/dist/oojs-ui-femiwiki-*.css "$WD/dist/resources/"
+cp "$WD"/oojs-ui/dist/oojs-ui-femiwiki-*.css "$WD/dist/resources/"
 cp "$WD"/oojs-ui/dist/oojs-ui-*-femiwiki.css "$WD/dist/resources/"
+cp "$WD"/oojs-ui/dist/themes/femiwiki/icons-*.json "$WD/dist/resources/"
 cp -r "$WD/oojs-ui/dist/themes/femiwiki/images" "$WD/dist/resources/images/"

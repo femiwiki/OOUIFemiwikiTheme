@@ -1,6 +1,5 @@
 {
   "name": "@femiwiki/ooui-femiwiki-theme",
-  "version": "1.0.0",
   "description": "OOUI Femiwiki Theme",
   "main": "index.js",
   "repository": "https://github.com/femiwiki/OOUIFemiwikiTheme",

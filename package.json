@@ -6,6 +6,11 @@
   "repository": "https://github.com/femiwiki/OOUIFemiwikiTheme",
   "author": "Femiwiki Team <admin@femiwiki.com>",
   "license": "MIT",
+  "files": [
+    "/README.md",
+    "/LICENSE",
+    "/dist/"
+  ],
   "scripts": {
     "lint": "prettier . --check",
     "fix": "prettier . --write"

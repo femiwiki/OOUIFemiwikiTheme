@@ -52,7 +52,8 @@
 			"file": "images/icons/clock.svg"
 		},
 		"close": {
-			"file": "images/icons/close.svg"
+			"file": "images/icons/close.svg",
+			"variants": [ "destructive" ]
 		},
 		"ellipsis": {
 			"file": "images/icons/ellipsis.svg"
@@ -114,6 +115,12 @@
 				"ltr": "images/icons/logOut-ltr.svg",
 				"rtl": "images/icons/logOut-rtl.svg"
 			}
+		},
+		"network": {
+			"file": "images/icons/network.svg"
+		},
+		"networkOff": {
+			"file": "images/icons/networkOff.svg"
 		},
 		"newWindow": {
 			"file": {

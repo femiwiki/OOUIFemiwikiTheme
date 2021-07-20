@@ -4,10 +4,13 @@ set -euo pipefail; IFS=$'\n\t'
 WD=$(dirname "$0")
 
 
-if [ -f "$WD/oojs-ui/yarn.lock" ]; then
+if [ ! -f "$WD/oojs-ui/yarn.lock" ]; then
   echo 'Installing dependencies'
   yarn --cwd "$WD/oojs-ui"
 fi
+
+echo 'Adding Femiwiki theme'
+yarn grunt --gruntfile "$WD/oojs-ui/Gruntfile.js" add-theme --name=Femiwiki --template=WikimediaUI
 
 echo 'Building Femiwiki theme'
 cat "$WD/src/femiwiki-base.less" >> "$WD/oojs-ui/node_modules/wikimedia-ui-base/wikimedia-ui-base.less"

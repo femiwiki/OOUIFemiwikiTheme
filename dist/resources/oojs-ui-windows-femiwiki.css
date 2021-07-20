@@ -1,19 +1,22 @@
 /*!
- * OOUI v0.39.3
+ * OOUI v0.41.3
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-04-19T00:37:54Z
+ * Date: 2021-07-20T06:40:44Z
  */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
 
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-window {
   background: transparent;
 }
 .oo-ui-window-frame {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -48,13 +51,14 @@
   left: 0;
 }
 
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-dialog-content > .oo-ui-window-head,
 .oo-ui-dialog-content > .oo-ui-window-body,
 .oo-ui-dialog-content > .oo-ui-window-foot {
   position: absolute;
   left: 0;
   right: 0;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -75,6 +79,8 @@
   bottom: 0;
 }
 
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-messageDialog-actions .oo-ui-actionWidget {
   position: relative;
   text-align: center;
@@ -105,6 +111,8 @@
   text-overflow: ellipsis;
 }
 .oo-ui-messageDialog-content > .oo-ui-window-foot {
+  /* For some reason `outline` in this file is throwing warnings, but not elsewhere */
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   outline: 1px solid #a2a9b1;
 }
 .oo-ui-messageDialog-title,
@@ -175,6 +183,8 @@
   border-radius: 0 0 0 0;
 }
 
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-processDialog-location {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -214,6 +224,7 @@
 }
 .oo-ui-processDialog-content .oo-ui-window-head,
 .oo-ui-processDialog-content .oo-ui-window-foot {
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   outline: 1px solid #c8ccd1;
 }
 .oo-ui-processDialog-content .oo-ui-window-head {
@@ -234,7 +245,7 @@
 .oo-ui-processDialog-title {
   font-size: 1.1em;
   font-weight: bold;
-  line-height: 2.5974026em;
+  line-height: 2.85714286em / 1.1;
 }
 .oo-ui-processDialog .oo-ui-actionWidget > .oo-ui-buttonElement-button {
   border-radius: 0;
@@ -264,7 +275,7 @@
   margin-left: 0;
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding: 0.71428571em 12px;
+  padding: 10px 12px;
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-left: 2.42857143em;
@@ -336,7 +347,7 @@
   text-align: left;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-processDialog-title {
-  line-height: 2.85714286em;
+  line-height: 3.14285714em / 1.1;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-processDialog-content .oo-ui-window-body {
   top: 3.14285714em;
@@ -346,12 +357,14 @@
   padding-left: 3.14285714em;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding: 0.85714286em 12px;
+  padding: 11px 12px;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-left: 2.42857143em;
 }
 
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-windowManager-modal > .oo-ui-dialog {
   position: fixed;
   width: 0;
@@ -394,18 +407,15 @@
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0;
   -webkit-transition: opacity ease-out 250ms;
-  -moz-transition: opacity ease-out 250ms;
   transition: opacity ease-out 250ms;
 }
 .oo-ui-windowManager-modal > .oo-ui-dialog > .oo-ui-window-frame {
   background-color: #fff;
   opacity: 0;
   -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
   -webkit-transition: all ease-out 250ms;
-  -moz-transition: all ease-out 250ms;
   transition: all ease-out 250ms;
 }
 .oo-ui-windowManager-modal > .oo-ui-dialog.oo-ui-window-setup {
@@ -414,7 +424,6 @@
 .oo-ui-windowManager-modal > .oo-ui-dialog.oo-ui-window-setup > .oo-ui-window-frame {
   opacity: 1;
   -webkit-transform: scale(1);
-  -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
@@ -422,6 +431,7 @@
   top: 1em;
   bottom: 1em;
   max-height: 100%;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   max-height: calc( 100% - 2em );
   border: 1px solid #a2a9b1;
   border-radius: 0;

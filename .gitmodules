@@ -1,5 +1,6 @@
 [submodule "oojs-ui"]
 	path = oojs-ui
+	url = https://gerrit.wikimedia.org/r/oojs/ui
 	# MediaWiki 1.36 supports for OOUI v0.41.3
 	# https://www.mediawiki.org/wiki/Release_notes/1.36
 	branch = v0.41.3

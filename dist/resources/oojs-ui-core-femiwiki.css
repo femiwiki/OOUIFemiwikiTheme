@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-07-20T06:38:24Z
+ * Date: 2021-08-26T05:17:15Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -637,7 +637,7 @@
   margin-right: 12px;
 }
 .oo-ui-fieldLayout-messages > .oo-ui-messageWidget:first-child {
-  margin-top: 8px / 2;
+  margin-top: 4px;
 }
 .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
   color: #72777d;
@@ -1023,7 +1023,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin: 0;
   text-indent: -9999px;
   line-height: 2.5;
-  margin: 0.85714286em / 2;
   display: inline-block;
   position: static;
   top: auto;

@@ -1,12 +1,12 @@
 /*!
- * OOUI v0.41.3
+ * OOUI v0.42.0
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-08-26T05:17:15Z
+ * Date: 2021-09-10T11:38:54Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -1560,7 +1560,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   height: 1.42857143em;
   border-color: #72777d;
   border-style: solid;
-  border-radius: 100%;
+  border-radius: 50%;
   border-width: 0;
   border-width: 1px;
 }
@@ -1572,7 +1572,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   right: -4px;
   bottom: -4px;
   border: 1px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .oo-ui-radioInputWidget [type='radio']:checked + span,
 .oo-ui-radioInputWidget [type='radio']:checked:hover + span,

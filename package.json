@@ -15,7 +15,7 @@
     "lint": "prettier . --check",
     "fix": "prettier . --write"
   },
-  "dependencies": {
+  "devDependencies": {
     "grunt": "^1.4.1",
     "prettier": "^2.3.2"
   }

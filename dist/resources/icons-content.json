@@ -73,6 +73,9 @@
 				"rtl": "images/icons/articleRedirect-rtl.svg"
 			}
 		},
+		"database": {
+			"file": "../femiwiki/images/icons/database.svg"
+		},
 		"die": {
 			"file": "images/icons/die.svg"
 		},

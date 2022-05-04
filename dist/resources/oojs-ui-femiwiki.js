@@ -2,11 +2,11 @@
  * OOUI v0.42.0
  * https://www.mediawiki.org/wiki/OOUI
  *
- * Copyright 2011–2021 OOUI Team and other contributors.
+ * Copyright 2011–2022 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-09-10T11:38:42Z
+ * Date: 2022-05-04T14:40:54Z
  */
 ( function ( OO ) {
 

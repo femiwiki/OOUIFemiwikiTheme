@@ -1,5 +1,7 @@
 [submodule "oojs-ui"]
 	path = oojs-ui
 	url = https://github.com/wikimedia/oojs-ui
-	branch = master
+	# MediaWiki 1.38 supports for OOUI v0.44.3
+	# https://www.mediawiki.org/w/index.php?title=Release_notes/1.39&oldid=5673496#Changed_external_libraries
+	branch = v0.44.3
 	ignore = dirty

@@ -8,7 +8,7 @@
 			"global": true
 		},
 		"progressive": {
-			"color": "#aca7e2",
+			"color": "#36c",
 			"global": true
 		},
 		"destructive": {
@@ -42,6 +42,18 @@
 		},
 		"code": {
 			"file": "images/icons/code.svg"
+		},
+		"copy": {
+			"file": {
+				"ltr": "../femiwiki/images/icons/copy-ltr.svg",
+				"rtl": "../femiwiki/images/icons/copy-rtl.svg"
+			}
+		},
+		"cut": {
+			"file": {
+				"ltr": "../femiwiki/images/icons/cut-ltr.svg",
+				"rtl": "../femiwiki/images/icons/cut-rtl.svg"
+			}
 		},
 		"hieroglyph": {
 			"file": "images/icons/hieroglyph.svg"
@@ -103,6 +115,12 @@
 				"rtl": "images/icons/outline-rtl.svg"
 			}
 		},
+		"paste": {
+			"file": {
+				"ltr": "../femiwiki/images/icons/paste-ltr.svg",
+				"rtl": "../femiwiki/images/icons/paste-rtl.svg"
+			}
+		},
 		"puzzle": {
 			"file": {
 				"ltr": "images/icons/puzzle-ltr.svg",
@@ -114,6 +132,9 @@
 				"ltr": "images/icons/quotes-ltr.svg",
 				"rtl": "images/icons/quotes-rtl.svg"
 			}
+		},
+		"sandbox": {
+			"file": "images/icons/sandbox.svg"
 		},
 		"searchCaseSensitive": {
 			"file": "images/icons/searchCaseSensitive.svg"

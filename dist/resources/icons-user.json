@@ -8,7 +8,7 @@
 			"global": true
 		},
 		"progressive": {
-			"color": "#aca7e2",
+			"color": "#36c",
 			"global": true
 		},
 		"destructive": {
@@ -56,6 +56,12 @@
 			"file": {
 				"ltr": "images/icons/userTalk-ltr.svg",
 				"rtl": "images/icons/userTalk-rtl.svg"
+			}
+		},
+		"watchlist": {
+			"file": {
+				"ltr": "images/icons/watchlist-ltr.svg",
+				"rtl": "images/icons/watchlist-rtl.svg"
 			}
 		}
 	}

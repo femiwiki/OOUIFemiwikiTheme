@@ -18,7 +18,7 @@
 			"color": "#d33"
 		},
 		"warning": {
-			"color": "#fc3"
+			"color": "#edab00"
 		},
 		"success": {
 			"color": "#14866d"
@@ -72,6 +72,9 @@
 				"ltr": "images/icons/articleRedirect-ltr.svg",
 				"rtl": "images/icons/articleRedirect-rtl.svg"
 			}
+		},
+		"database": {
+			"file": "../femiwiki/images/icons/database.svg"
 		},
 		"die": {
 			"file": "images/icons/die.svg"

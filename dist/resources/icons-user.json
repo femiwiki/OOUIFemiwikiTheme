@@ -18,7 +18,7 @@
 			"color": "#d33"
 		},
 		"warning": {
-			"color": "#fc3"
+			"color": "#edab00"
 		},
 		"success": {
 			"color": "#14866d"
@@ -56,6 +56,12 @@
 			"file": {
 				"ltr": "images/icons/userTalk-ltr.svg",
 				"rtl": "images/icons/userTalk-rtl.svg"
+			}
+		},
+		"watchlist": {
+			"file": {
+				"ltr": "images/icons/watchlist-ltr.svg",
+				"rtl": "images/icons/watchlist-rtl.svg"
 			}
 		}
 	}

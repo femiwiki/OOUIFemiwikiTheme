@@ -1,5 +1,7 @@
 [submodule "oojs-ui"]
 	path = oojs-ui
 	url = https://github.com/wikimedia/oojs-ui
-	branch = master
+	# MediaWiki 1.41 supports for OOUI v0.48.1
+	# https://github.com/wikimedia/mediawiki-vendor/blob/REL1_41/composer.json
+	branch = v0.48.1
 	ignore = dirty

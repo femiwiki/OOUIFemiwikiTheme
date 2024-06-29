@@ -1,15 +1,13 @@
 /*!
- * OOUI v0.42.0
+ * OOUI v0.49.1
  * https://www.mediawiki.org/wiki/OOUI
  *
- * Copyright 2011–2022 OOUI Team and other contributors.
+ * Copyright 2011–2024 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-05-04T14:41:07Z
+ * Date: 2024-06-29T19:08:28Z
  */
-/* stylelint-disable selector-no-vendor-prefix */
-/* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-icon-add {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/add.svg);
 }
@@ -85,9 +83,6 @@
 .oo-ui-icon-close {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/close.svg);
 }
-.oo-ui-image-destructive.oo-ui-icon-close {
-  background-image: /* @embed */ url(themes/femiwiki/images/icons/close-destructive.svg);
-}
 .oo-ui-image-invert.oo-ui-icon-close {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/close-invert.svg);
 }
@@ -102,6 +97,15 @@
 }
 .oo-ui-image-progressive.oo-ui-icon-ellipsis {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/ellipsis-progressive.svg);
+}
+.oo-ui-icon-verticalEllipsis {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/verticalEllipsis.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-verticalEllipsis {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/verticalEllipsis-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-verticalEllipsis {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/verticalEllipsis-progressive.svg);
 }
 .oo-ui-icon-feedback {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/feedback-ltr.svg);
@@ -123,6 +127,18 @@
 }
 .oo-ui-image-progressive.oo-ui-icon-funnel {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/funnel-ltr-progressive.svg);
+}
+.oo-ui-icon-hand {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/hand.svg);
+}
+.oo-ui-image-destructive.oo-ui-icon-hand {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/hand-destructive.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-hand {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/hand-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-hand {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/hand-progressive.svg);
 }
 .oo-ui-icon-heart {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/heart.svg);
@@ -324,18 +340,6 @@
 }
 .oo-ui-image-progressive.oo-ui-icon-settings {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/settings-progressive.svg);
-}
-.oo-ui-icon-stopHand {
-  background-image: /* @embed */ url(themes/femiwiki/images/icons/stopHand.svg);
-}
-.oo-ui-image-destructive.oo-ui-icon-stopHand {
-  background-image: /* @embed */ url(themes/femiwiki/images/icons/stopHand-destructive.svg);
-}
-.oo-ui-image-invert.oo-ui-icon-stopHand {
-  background-image: /* @embed */ url(themes/femiwiki/images/icons/stopHand-invert.svg);
-}
-.oo-ui-image-progressive.oo-ui-icon-stopHand {
-  background-image: /* @embed */ url(themes/femiwiki/images/icons/stopHand-progressive.svg);
 }
 .oo-ui-icon-subtract {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/subtract.svg);

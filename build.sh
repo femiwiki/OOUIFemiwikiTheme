@@ -13,7 +13,7 @@ echo 'Adding Femiwiki theme'
 yarn grunt --gruntfile "$WD/oojs-ui/Gruntfile.js" add-theme --name=Femiwiki --template=WikimediaUI
 
 echo 'Building Femiwiki theme'
-cat "$WD/src/femiwiki-base.less" >>"$WD/oojs-ui/node_modules/wikimedia-ui-base/wikimedia-ui-base.less"
+cat "$WD/src/femiwiki-base.less" >>"$WD/oojs-ui/node_modules/@wikimedia/codex-design-tokens/theme-wikimedia-ui-legacy.less"
 find "$WD/"oojs-ui/src/themes/femiwiki/*.json -exec sed -i 's/"#36c"/"#aca7e2"/g' {} \;
 
 echo 'Building OOUI themes'

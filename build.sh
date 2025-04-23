@@ -6,7 +6,9 @@ WD=$(dirname "$0")
 
 if [ ! -f "$WD/oojs-ui/package-lock.json" ]; then
   echo 'Installing dependencies'
-  npm install --prefix "$WD/oojs-ui"
+  cd "$WD/oojs-ui"
+  npm install
+  cd ..
 fi
 
 echo 'Adding Femiwiki theme'

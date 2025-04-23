@@ -17,13 +17,13 @@ npm install
 ```sh
 git checkout main
 git pull
-git checkout -b REL1_42
-git submodule update --recursive --remote
+git checkout -b REL1_43
+git submodule update --init --recursive --remote
 cd oojs-ui
-git checkout v0.49.1 --force
+git checkout v0.51.2 --force
 cd ..
 git add oojs-ui
-git commit -m 'MediaWiki 1.42 supports for OOUI v0.49.1' -m 'https://github.com/wikimedia/mediawiki-vendor/blob/REL1_42/composer.json'
+git commit -m 'MediaWiki 1.43 supports for OOUI v0.51.2' -m 'https://github.com/wikimedia/mediawiki-vendor/blob/REL1_43/composer.json'
 
 asdf install nodejs $(cat oojs-ui/.nvmrc)
 asdf local nodejs $(cat oojs-ui/.nvmrc)

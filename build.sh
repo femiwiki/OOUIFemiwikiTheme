@@ -28,6 +28,6 @@ cp "$WD"/oojs-ui/dist/oojs-ui-*-femiwiki.css "$WD/dist/resources/"
 cp "$WD"/oojs-ui/dist/themes/femiwiki/icons-*.json "$WD/dist/resources/"
 cp -r "$WD/oojs-ui/dist/themes/femiwiki/images" "$WD/dist/resources/images/"
 cp -r "$WD/oojs-ui/dist/themes/femiwiki/images/icons" "$WD/dist/femiwiki/images/icons"
-cp -r "$WD"/dist/femiwiki/images/icons/icons/* "$WD/dist/resources/images/icons/"
+cp -r "$WD"/dist/femiwiki/images/icons/* "$WD/dist/resources/images/icons/"
 
 echo "Done"

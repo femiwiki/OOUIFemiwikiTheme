@@ -8,7 +8,7 @@ Femiwiki Theme is a theme for [OOUI]
 git clone --recurse-submodules https://github.com/femiwiki/OOUIFemiwikiTheme
 # If you already cloned:
 #   git submodule update --recursive --remote
-yarn
+npm install
 ./build.sh
 ```
 
@@ -27,7 +27,7 @@ git commit -m 'MediaWiki 1.42 supports for OOUI v0.49.1' -m 'https://github.com/
 
 asdf install nodejs $(cat oojs-ui/.nvmrc)
 asdf local nodejs $(cat oojs-ui/.nvmrc)
-yarn
+npm install
 ./build.sh
 git add dist
 git commit -m Rebuild

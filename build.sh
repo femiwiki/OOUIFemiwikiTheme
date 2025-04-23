@@ -4,20 +4,20 @@ IFS=$'\n\t'
 
 WD=$(dirname "$0")
 
-if [ ! -f "$WD/oojs-ui/yarn.lock" ]; then
+if [ ! -f "$WD/oojs-ui/package-lock.json" ]; then
   echo 'Installing dependencies'
-  yarn --cwd "$WD/oojs-ui"
+  npm install --prefix "$WD/oojs-ui"
 fi
 
 echo 'Adding Femiwiki theme'
-yarn grunt --gruntfile "$WD/oojs-ui/Gruntfile.js" add-theme --name=Femiwiki --template=WikimediaUI
+npx grunt --gruntfile "$WD/oojs-ui/Gruntfile.js" add-theme --name=Femiwiki --template=WikimediaUI
 
 echo 'Building Femiwiki theme'
 cat "$WD/src/femiwiki-base.less" >>"$WD/oojs-ui/node_modules/@wikimedia/codex-design-tokens/theme-wikimedia-ui-legacy.less"
 find "$WD/"oojs-ui/src/themes/femiwiki/*.json -exec sed -i 's/"#36c"/"#aca7e2"/g' {} \;
 
 echo 'Building OOUI themes'
-yarn grunt --gruntfile "$WD/oojs-ui/Gruntfile.js" build
+npx grunt --gruntfile "$WD/oojs-ui/Gruntfile.js" build
 
 echo 'Moveing Femiwiki Theme to dist'
 mkdir -p "$WD/dist/php/" "$WD/dist/resources/" "$WD/dist/femiwiki/images/images"

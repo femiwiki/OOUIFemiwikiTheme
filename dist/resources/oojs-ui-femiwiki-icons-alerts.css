@@ -1,15 +1,13 @@
 /*!
- * OOUI v0.42.0
+ * OOUI v0.51.2
  * https://www.mediawiki.org/wiki/OOUI
  *
- * Copyright 2011–2022 OOUI Team and other contributors.
+ * Copyright 2011–2025 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-05-04T14:41:07Z
+ * Date: 2025-04-23T12:39:53Z
  */
-/* stylelint-disable selector-no-vendor-prefix */
-/* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-icon-alert {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/alert.svg);
 }
@@ -96,6 +94,18 @@
 }
 .oo-ui-image-progressive.oo-ui-icon-speechBubbles {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/speechBubbles-ltr-progressive.svg);
+}
+.oo-ui-icon-success {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/success.svg);
+}
+.oo-ui-image-success.oo-ui-icon-success {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/success-success.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-success {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/success-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-success {
+  background-image: /* @embed */ url(themes/femiwiki/images/icons/success-progressive.svg);
 }
 .oo-ui-icon-tray {
   background-image: /* @embed */ url(themes/femiwiki/images/icons/tray.svg);

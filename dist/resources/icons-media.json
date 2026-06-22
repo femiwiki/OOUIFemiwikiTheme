@@ -12,13 +12,13 @@
 			"global": true
 		},
 		"destructive": {
-			"color": "#d33"
+			"color": "#d73333"
 		},
 		"error": {
-			"color": "#d33"
+			"color": "#d73333"
 		},
 		"warning": {
-			"color": "#fc3"
+			"color": "#ab7f2a"
 		},
 		"success": {
 			"color": "#14866d"
@@ -68,7 +68,8 @@
 			"file": "images/icons/play.svg"
 		},
 		"stop": {
-			"file": "images/icons/stop.svg"
+			"file": "images/icons/stop.svg",
+			"variants": [ "destructive" ]
 		},
 		"volumeDown": {
 			"file": {

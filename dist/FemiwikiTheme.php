@@ -6,6 +6,7 @@ class FemiwikiTheme extends Theme {
 
 	/* Methods */
 
+	/** @inheritDoc */
 	public function getElementClasses( Element $element ) {
 		$variants = [
 			'invert' => false,

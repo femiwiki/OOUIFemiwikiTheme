@@ -14,3 +14,10 @@ updates:
         update-types:
           - 'version-update:semver-minor'
           - 'version-update:semver-patch'
+
+  - package-ecosystem: 'composer'
+    directory: '/'
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7

@@ -17,6 +17,7 @@ npx grunt --gruntfile "$WD/oojs-ui/Gruntfile.js" add-theme --name=Femiwiki --tem
 echo 'Building Femiwiki theme'
 cat "$WD/src/femiwiki-base.less" >>"$WD/oojs-ui/node_modules/@wikimedia/codex-design-tokens/theme-wikimedia-ui-legacy.less"
 cat "$WD/src/femiwiki-elements.less" >>"$WD/oojs-ui/src/themes/femiwiki/elements.less"
+cat "$WD/src/femiwiki-windows.less" >>"$WD/oojs-ui/src/themes/femiwiki/windows.less"
 find "$WD/"oojs-ui/src/themes/femiwiki/*.json -exec sed -i 's/"#36c"/"#aca7e2"/g' {} \;
 
 echo 'Building OOUI themes'

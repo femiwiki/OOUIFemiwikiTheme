@@ -15,5 +15,10 @@
       @color-accent--active,
       @color-accent
     );
+
+    // The theme gives primary buttons white icons; turn them black on the light green
+    > .oo-ui-buttonElement-button > .oo-ui-image-invert {
+      filter: invert(1);
+    }
   }
 }

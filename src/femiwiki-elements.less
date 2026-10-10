@@ -1,0 +1,19 @@
+// The green accent for the one primary action, as FemiwikiSkin's resources/variables.less
+@color-accent: #bad75b;
+@color-accent--hover: #acc94d;
+@color-accent--active: #8ca534;
+@color-accent-text: #414f0a;
+
+// Less applies every definition of a mixin, so these rules follow and override the WikimediaUI ones
+.theme-oo-ui-buttonElement() {
+  &-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive {
+    .mw-framed-primary-button-colored(
+      ~'.oo-ui-buttonElement-button',
+      @color-accent,
+      @color-accent-text,
+      @color-accent--hover,
+      @color-accent--active,
+      @color-accent
+    );
+  }
+}

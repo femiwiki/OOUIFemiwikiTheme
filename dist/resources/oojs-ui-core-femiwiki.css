@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2026-06-22T00:32:19Z
+ * Date: 2026-10-10T20:01:13Z
  */
 /* stylelint-disable-next-line @stylistic/indentation */
 .oo-ui-element-hidden {
@@ -49,7 +49,7 @@
 .oo-ui-buttonElement > .oo-ui-buttonElement-button {
   position: relative;
   min-height: 32px;
-  border-radius: 0;
+  border-radius: 0.3em;
   padding-top: 2.14285714em;
   font-weight: 700;
   text-decoration: none;
@@ -225,7 +225,7 @@
 .oo-ui-buttonElement-framed > .oo-ui-buttonElement-button {
   border-style: solid;
   border-width: 1px;
-  border-radius: 0;
+  border-radius: 0.3em;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -443,6 +443,77 @@
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary > .oo-ui-buttonElement-button > .oo-ui-indicatorElement-indicator {
   opacity: 1;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
+  color: #414f0a;
+  background-color: #bad75b;
+  border-color: #bad75b;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover {
+  background-color: #acc94d;
+  border-color: #acc94d;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus {
+  border-color: #bad75b;
+  box-shadow: inset 0 0 0 1px #bad75b, inset 0 0 0 2px #414f0a;
+  outline: 1px solid transparent;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
+  color: #414f0a;
+  background-color: #8ca534;
+  border-color: #8ca534;
+  box-shadow: none;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button > .oo-ui-image-invert {
+  filter: invert(1);
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
+  box-shadow: 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
+  box-shadow: inset 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
+  box-shadow: 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
+  box-shadow: inset 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
+  box-shadow: 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
+  box-shadow: inset 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
+  box-shadow: 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
+  box-shadow: inset 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
+  box-shadow: 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
+  box-shadow: inset 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
 }
 
 /* stylelint-disable-next-line @stylistic/indentation */
@@ -701,11 +772,11 @@
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget.oo-ui-textInputWidget > .oo-ui-inputWidget-input,
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-dropdownWidget-handle,
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-tagMultiselectWidget-handle {
-  border-radius: 0 0 0 0;
+  border-radius: 0.3em 0 0 0.3em;
   position: relative;
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-button .oo-ui-buttonElement-framed > .oo-ui-buttonElement-button {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0.3em 0.3em 0;
   margin-left: -1px;
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-button .oo-ui-buttonElement-frameless {
@@ -823,7 +894,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-panelLayout-framed {
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
 }
 .oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
   margin: 12px 0;
@@ -974,7 +1045,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block {
   border: 1px solid;
-  border-radius: 0;
+  border-radius: 0.3em;
   padding: 16px 24px;
   font-weight: 400;
 }
@@ -1073,7 +1144,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 /* stylelint-disable-next-line @stylistic/indentation */
 .oo-ui-buttonGroupWidget {
   display: inline-block;
-  border-radius: 0;
+  border-radius: 0.3em;
   margin-right: 8px;
   z-index: 0;
   position: relative;
@@ -1095,13 +1166,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-radius: 0;
 }
 .oo-ui-buttonGroupWidget .oo-ui-buttonElement-framed:first-child .oo-ui-buttonElement-button {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  border-bottom-left-radius: 0.3em;
+  border-top-left-radius: 0.3em;
 }
 .oo-ui-buttonGroupWidget .oo-ui-buttonElement-framed:last-child .oo-ui-buttonElement-button {
   margin-right: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  border-bottom-right-radius: 0.3em;
+  border-top-right-radius: 0.3em;
 }
 .oo-ui-buttonGroupWidget .oo-ui-buttonElement-framed.oo-ui-widget-disabled + .oo-ui-widget-disabled > .oo-ui-buttonElement-button {
   border-left-color: var(--border-color-inverted, #fff);
@@ -1199,7 +1270,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-popupWidget-popup {
   background-color: var(--background-color-base, #fff);
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 @supports ( filter: drop-shadow( 0 0 0 ) ) {
@@ -1375,7 +1446,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   height: 1.42857143em;
   border-color: var(--border-color-input-binary, #72777d);
   border-style: solid;
-  border-radius: 0;
+  border-radius: 0.3em;
   border-width: 1px;
 }
 .oo-ui-checkboxInputWidget [type='checkbox']:checked:not( :indeterminate ) + span {
@@ -1494,7 +1565,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   height: 2.2857143em;
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
   padding-left: 12px;
   padding-right: 2.14285714em;
   font-size: inherit;
@@ -1700,7 +1771,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   color: var(--color-emphasized, #000);
   margin: 0;
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
   padding: 5px 8px;
   font-size: inherit;
   font-family: inherit;
@@ -1818,7 +1889,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   z-index: 4;
   background-color: var(--background-color-base, #fff);
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 .oo-ui-menuSelectWidget.oo-ui-clippableElement-clippable {
@@ -1913,7 +1984,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-dropdownWidget-handle {
   min-height: 32px;
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
   padding: 5px 2.14285714em 5px 12px;
   line-height: 1;
 }
@@ -2032,8 +2103,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-comboBoxInputWidget.oo-ui-comboBoxInputWidget-empty .oo-ui-inputWidget-input,
 .oo-ui-comboBoxInputWidget-php .oo-ui-inputWidget-input {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
   border-right-width: 1px;
 }
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement {
@@ -2317,7 +2388,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-selectFileInputWidget-dropTarget {
   background-color: var(--background-color-base, #fff);
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
   vertical-align: middle;
   overflow: hidden;
 }

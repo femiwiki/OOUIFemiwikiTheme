@@ -55,6 +55,23 @@
     );
   }
 
+  // Destructive buttons sit beside tonal ones in VisualEditor's context, so drop their outline too
+  &-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive {
+    .mw-framed-button-colored(
+      ~'.oo-ui-buttonElement-button',
+      @background-color-destructive-subtle,
+      @background-color-destructive-subtle,
+      @color-destructive,
+      @background-color-destructive-subtle--hover,
+      @background-color-destructive-subtle--hover,
+      @color-destructive--hover,
+      @background-color-destructive-subtle--active,
+      @background-color-destructive-subtle--active,
+      @color-destructive--active,
+      @color-progressive--focus
+    );
+  }
+
   &-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive {
     .mw-framed-primary-button-colored(
       ~'.oo-ui-buttonElement-button',

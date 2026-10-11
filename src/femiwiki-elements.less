@@ -17,6 +17,26 @@
 );
 @color-button-tonal: var(--color-button-tonal, #5144a3);
 
+// Raised buttons as FemiwikiSkin's; its DarkMode styles turn --box-shadow-color-button white
+@box-shadow-button: 0 1px 2px var(--box-shadow-color-button, rgba(0, 0, 0, 0.5));
+@box-shadow-button--active: inset @box-shadow-button;
+
+// Each flag set has its own pressed rule with `box-shadow: none`, so each gets its own override
+.fw-raised-button(@flags) {
+  &-framed.oo-ui-widget-enabled@{flags} {
+    > .oo-ui-buttonElement-button {
+      box-shadow: @box-shadow-button;
+    }
+
+    > .oo-ui-buttonElement-button:active,
+    &.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+    &.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
+    &.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
+      box-shadow: @box-shadow-button--active;
+    }
+  }
+}
+
 // Less applies every definition of a mixin, so these rules follow and override the WikimediaUI ones
 .theme-oo-ui-buttonElement() {
   &-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive {
@@ -50,4 +70,10 @@
       filter: invert(1);
     }
   }
+
+  .fw-raised-button(~'');
+  .fw-raised-button(~'.oo-ui-flaggedElement-progressive');
+  .fw-raised-button(~'.oo-ui-flaggedElement-destructive');
+  .fw-raised-button(~'.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive');
+  .fw-raised-button(~'.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive');
 }

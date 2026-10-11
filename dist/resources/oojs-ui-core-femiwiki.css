@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2026-10-10T23:40:36Z
+ * Date: 2026-10-11T03:31:31Z
  */
 /* stylelint-disable-next-line @stylistic/indentation */
 .oo-ui-element-hidden {
@@ -466,6 +466,30 @@
   color: var(--color-button-tonal, #5144a3);
   background-color: var(--background-color-button-tonal--active, #d3cff4);
   border-color: var(--background-color-button-tonal--active, #d3cff4);
+  box-shadow: none;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
+  color: var(--color-destructive, #d73333);
+  background-color: var(--background-color-destructive-subtle, #ffe9e5);
+  border-color: var(--background-color-destructive-subtle, #ffe9e5);
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
+  color: var(--color-destructive--hover, #fc493b);
+  background-color: var(--background-color-destructive-subtle--hover, #ffdad3);
+  border-color: var(--background-color-destructive-subtle--hover, #ffdad3);
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:focus {
+  border-color: var(--color-progressive--focus, #36c);
+  box-shadow: inset 0 0 0 1px var(--color-progressive--focus, #36c);
+  outline: 1px solid transparent;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
+  color: var(--color-destructive--active, #9f3526);
+  background-color: var(--background-color-destructive-subtle--active, #ffc8bd);
+  border-color: var(--background-color-destructive-subtle--active, #ffc8bd);
   box-shadow: none;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {

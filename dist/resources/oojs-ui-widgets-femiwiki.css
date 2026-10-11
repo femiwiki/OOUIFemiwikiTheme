@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2026-06-22T00:32:19Z
+ * Date: 2026-10-10T20:01:13Z
  */
 /* stylelint-disable-next-line @stylistic/indentation */
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ),
@@ -226,7 +226,7 @@
 /* stylelint-disable-next-line @stylistic/indentation */
 .oo-ui-buttonSelectWidget {
   display: inline-block;
-  border-radius: 0;
+  border-radius: 0.3em;
   margin-right: 8px;
   z-index: 0;
   position: relative;
@@ -244,13 +244,13 @@
   border-radius: 0;
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget:first-child .oo-ui-buttonElement-button {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  border-bottom-left-radius: 0.3em;
+  border-top-left-radius: 0.3em;
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget:last-child .oo-ui-buttonElement-button {
   margin-right: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  border-bottom-right-radius: 0.3em;
+  border-top-right-radius: 0.3em;
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget.oo-ui-widget-disabled + .oo-ui-widget-disabled > .oo-ui-buttonElement-button {
   border-left-color: var(--border-color-inverted, #fff);
@@ -431,8 +431,8 @@
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget {
   border-width: 1px 1px 0 1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget .oo-ui-labelElement-label {
   border-bottom: 2px solid transparent;
@@ -481,7 +481,7 @@
   box-shadow: inset 0 -2px 0 0 var(--color-progressive--active, #233566);
 }
 .oo-ui-tabSelectWidget-frameless.oo-ui-widget-enabled:focus .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
-  border-radius: 0;
+  border-radius: 0.3em;
   box-shadow: inset 0 0 0 2px var(--color-progressive, #36c);
 }
 
@@ -531,7 +531,7 @@
   min-height: 32px;
   margin-right: 8px;
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
   padding: 0 8px;
   line-height: 1;
 }

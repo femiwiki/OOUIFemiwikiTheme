@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2026-06-22T00:32:19Z
+ * Date: 2026-10-10T23:40:36Z
  */
 /* stylelint-disable-next-line @stylistic/indentation */
 
@@ -158,16 +158,16 @@
   margin: 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:first-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0.3em;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:last-child {
   border-right-width: 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:last-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0.3em 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:only-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0.3em 0.3em;
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget {
   border-bottom: 1px solid var(--border-color-base, #a2a9b1);
@@ -177,7 +177,7 @@
   border-bottom-width: 0;
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget:last-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0.3em 0.3em;
 }
 
 /* stylelint-disable-next-line @stylistic/indentation */
@@ -359,6 +359,20 @@
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-left: 2.42857143em;
 }
+.oo-ui-processDialog-actions-safe,
+.oo-ui-processDialog-actions-primary,
+.oo-ui-processDialog-actions-other {
+  --box-shadow-color-button: transparent;
+}
+.oo-ui-processDialog-actions-safe .oo-ui-actionWidget > .oo-ui-buttonElement-button {
+  border-bottom-right-radius: 0.3em;
+}
+.oo-ui-processDialog-actions-primary .oo-ui-actionWidget > .oo-ui-buttonElement-button {
+  border-bottom-left-radius: 0.3em;
+}
+.oo-ui-processDialog-actions-other .oo-ui-actionWidget:last-child > .oo-ui-buttonElement-button {
+  border-top-right-radius: 0.3em;
+}
 
 /* stylelint-disable-next-line @stylistic/indentation */
 .oo-ui-windowManager-modal > .oo-ui-dialog {
@@ -427,6 +441,6 @@ html.oo-ui-windowManager-modal-active:not( .oo-ui-windowManager-modal-active-ful
   max-height: 100%;
   max-height: calc( 100% - 2em );
   border: 1px solid var(--border-color-base, #a2a9b1);
-  border-radius: 0;
+  border-radius: 0.3em;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }

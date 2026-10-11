@@ -1,0 +1,21 @@
+// As Codex's ButtonGroup: corners on the dialog frame or on a neighbouring button stay square,
+// free corners round, and buttons attached to the frame are not raised
+.theme-oo-ui-processDialog() {
+  &-actions-safe,
+  &-actions-primary,
+  &-actions-other {
+    --box-shadow-color-button: transparent;
+  }
+
+  &-actions-safe .oo-ui-actionWidget > .oo-ui-buttonElement-button {
+    border-bottom-right-radius: @border-radius-base;
+  }
+
+  &-actions-primary .oo-ui-actionWidget > .oo-ui-buttonElement-button {
+    border-bottom-left-radius: @border-radius-base;
+  }
+
+  &-actions-other .oo-ui-actionWidget:last-child > .oo-ui-buttonElement-button {
+    border-top-right-radius: @border-radius-base;
+  }
+}

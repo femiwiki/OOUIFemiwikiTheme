@@ -1,0 +1,53 @@
+// The green accent for the one primary action, as FemiwikiSkin's resources/variables.less
+@color-accent: #bad75b;
+@color-accent--hover: #acc94d;
+@color-accent--active: #8ca534;
+@color-accent-text: #414f0a;
+
+// Other progressive buttons: a tonal fill a step below the green, 6.6:1 for the text.
+// FemiwikiSkin sets these properties; the fallbacks are its light values.
+@background-color-button-tonal: var(--background-color-button-tonal, #ecebfc);
+@background-color-button-tonal--hover: var(
+  --background-color-button-tonal--hover,
+  #dfddf8
+);
+@background-color-button-tonal--active: var(
+  --background-color-button-tonal--active,
+  #d3cff4
+);
+@color-button-tonal: var(--color-button-tonal, #5144a3);
+
+// Less applies every definition of a mixin, so these rules follow and override the WikimediaUI ones
+.theme-oo-ui-buttonElement() {
+  &-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive {
+    .mw-framed-button-colored(
+      ~'.oo-ui-buttonElement-button',
+      @background-color-button-tonal,
+      @background-color-button-tonal,
+      @color-button-tonal,
+      @background-color-button-tonal--hover,
+      @background-color-button-tonal--hover,
+      @color-button-tonal,
+      @background-color-button-tonal--active,
+      @background-color-button-tonal--active,
+      @color-button-tonal,
+      @color-progressive--focus
+    );
+  }
+
+  &-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive {
+    .mw-framed-primary-button-colored(
+      ~'.oo-ui-buttonElement-button',
+      @color-accent,
+      @color-accent-text,
+      @color-accent--hover,
+      @color-accent--active,
+      @color-accent
+    );
+
+    // The theme gives primary buttons white icons; turn them black on the light green
+    > .oo-ui-buttonElement-button > .oo-ui-image-invert {
+      filter: invert(1);
+    }
+  }
+}

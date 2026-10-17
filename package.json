@@ -1,22 +1,17 @@
 {
-  "name": "@femiwiki/ooui-femiwiki-theme",
-  "version": "0.1.0",
-  "description": "OOUI Femiwiki Theme",
-  "main": "index.js",
-  "repository": "https://github.com/femiwiki/OOUIFemiwikiTheme",
-  "author": "Femiwiki Team <admin@femiwiki.com>",
-  "license": "MIT",
-  "files": [
-    "/README.md",
-    "/LICENSE",
-    "/dist/"
-  ],
-  "scripts": {
-    "lint": "prettier . --check",
-    "fix": "prettier . --write"
-  },
-  "devDependencies": {
-    "grunt": "^1.6.3",
-    "prettier": "^3.9.9"
-  }
+	"name": "@femiwiki/ooui-femiwiki-theme",
+	"version": "0.1.0",
+	"description": "OOUI Femiwiki Theme",
+	"main": "index.js",
+	"repository": "https://github.com/femiwiki/OOUIFemiwikiTheme",
+	"author": "Femiwiki Team <admin@femiwiki.com>",
+	"license": "MIT",
+	"files": [
+		"/README.md",
+		"/LICENSE",
+		"/dist/"
+	],
+	"devDependencies": {
+		"grunt": "^1.6.3"
+	}
 }

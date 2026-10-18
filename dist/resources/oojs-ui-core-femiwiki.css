@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2026-10-11T03:31:31Z
+ * Date: 2026-10-18T01:43:23Z
  */
 /* stylelint-disable-next-line @stylistic/indentation */
 .oo-ui-element-hidden {
@@ -1319,7 +1319,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background-color: var(--background-color-base, #fff);
   border: 1px solid var(--border-color-base, #a2a9b1);
   border-radius: 0.3em;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color-alpha-base, rgba(0, 0, 0, 0.06)), 0 0 8px 0 var(--box-shadow-color-alpha-base, rgba(0, 0, 0, 0.06));
 }
 @supports ( filter: drop-shadow( 0 0 0 ) ) {
   .oo-ui-popupWidget {
@@ -1938,7 +1938,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background-color: var(--background-color-base, #fff);
   border: 1px solid var(--border-color-base, #a2a9b1);
   border-radius: 0.3em;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color-alpha-base, rgba(0, 0, 0, 0.06)), 0 0 8px 0 var(--box-shadow-color-alpha-base, rgba(0, 0, 0, 0.06));
 }
 .oo-ui-menuSelectWidget.oo-ui-clippableElement-clippable {
   min-height: 32px;
@@ -2246,7 +2246,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-progressBarWidget:not( .oo-ui-progressBarWidget-inline) {
   border: 1px solid var(--border-color-base, #a2a9b1);
   border-radius: 9999px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color-alpha-base, rgba(0, 0, 0, 0.06)), 0 0 8px 0 var(--box-shadow-color-alpha-base, rgba(0, 0, 0, 0.06));
 }
 .oo-ui-progressBarWidget:not( .oo-ui-pendingElement-pending ) {
   background-color: var(--background-color-base, #fff);

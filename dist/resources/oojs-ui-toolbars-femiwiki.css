@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2026-06-22T00:32:19Z
+ * Date: 2026-10-18T01:43:23Z
  */
 /* stylelint-disable-next-line @stylistic/indentation */
 .oo-ui-tool {
@@ -440,7 +440,7 @@
   min-width: 16em;
   margin: 0 -1px;
   border: 1px solid var(--border-color-subtle, #c8ccd1);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0 var(--box-shadow-color-alpha-base, rgba(0, 0, 0, 0.06)), 0 0 8px 0 var(--box-shadow-color-alpha-base, rgba(0, 0, 0, 0.06));
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
   padding: 11px 12px;

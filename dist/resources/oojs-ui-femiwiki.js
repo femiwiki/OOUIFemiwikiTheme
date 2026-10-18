@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2026-06-22T00:31:52Z
+ * Date: 2026-10-18T01:43:13Z
  */
 ( function ( OO ) {
 
